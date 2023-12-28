@@ -62,6 +62,8 @@ const Certificates = {
         anchor.textContent = title;
         anchor.href = certificateUrls[index]; // Replace '#' with your desired URL
         anchor.classList.add('card-title-anchor');
+        anchor.target = '_blank';
+        anchor.rel = 'noopener noreferrer';
 
         figcaption.appendChild(anchor);
         card.appendChild(image);

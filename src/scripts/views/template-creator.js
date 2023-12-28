@@ -102,7 +102,7 @@ const createProjectsTemplate = () => `
               <p>The project mainly consists of frontend and API integration where we created our own static Hidden Gem API where it is curated through survey & user recommendations, and through scraping Instagram posts under several hidden gem hashtags where then these two results are displayed in the website alongside the static API or data’s we have created.</p>
               <p>Features of this website consists of hidden gem location recommendations based on users’ current location (GeoApify), details of the location where users can add it to their Wishlist, submit recommendation form where user can submit their recommendations to the database, search locations, filter by location type, and list of locations based on Instagram hashtag data.</p>
               <p>As one of the developers, I was responsible for creating the API with firebase, connecting both the firebase API and scraped data from Apify to the website, creating user location-based recommendations, and some small frontend tweaks. </p>
-              <p>Check out HiddenGem<a href="https://main--fancy-mousse-6f9e96.netlify.app/" target="_blank">Here</a></p>
+              <p>Check out HiddenGem<a class="hidden-gem-url" href="https://main--fancy-mousse-6f9e96.netlify.app/" target="_blank">Here</a></p>
             </div>
         </div>
         <div class="image-scroll-container">

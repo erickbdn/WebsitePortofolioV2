@@ -51,23 +51,58 @@ const DrawerInitiator = {
       drawer.classList.add('open');
     }
   });
-  
-  document.body.addEventListener('click', (event) => {
-    if (
-      !event.target.matches('#TBWORKS') 
-      && !event.target.matches('#nextPage') 
-      && !event.target.matches('#nextPage2')
-      && !event.target.matches('.project-content-container')
-      && !event.target.matches('.social-logo')
-      && !event.target.matches('.card-title-anchor')
-    ) {
-      if (isCheckboxChecked) {
-        checkbox.checked = false;
-      } else {
-        this._closeDrawer(event, drawer);
+
+  document.addEventListener('DOMContentLoaded', () => {
+    // Function to handle click on specific elements
+    const handleClick = (event) => {
+      console.log('Clicked element:', event.target);
+      console.log('Drawer state before click:', drawer.classList.contains('open'));
+    
+      // Handle click event for each specific element
+      if (!drawer.classList.contains('open')) {
+        isCheckboxChecked = true;
+        checkbox.checked = true;
+        drawer.classList.add('open');
       }
-    }
+    };
+  
+    // Delegate the click event for dynamically added elements
+    document.body.addEventListener('click', (event) => {
+      if (
+        event.target.classList.contains('card-title-anchor')
+        || event.target.closest('.social-logo')
+        || event.target.classList.contains('a-hover')
+        || event.target.classList.contains('hidden-gem-url')
+        || event.target.classList.contains('repeating-text-anchor')
+      ) {
+        handleClick(event);
+      }
+    });
+  
+    // Check if event listeners are attached to existing elements
+    const clickableElements = document.querySelectorAll('.card-title-anchor, .social-logo, .a-hover, .hidden-gem-url, .repeating-text-anchor');
+    clickableElements.forEach((element) => {
+      element.addEventListener('click', handleClick);
+    });
   });
+  
+  // document.body.addEventListener('click', (event) => {
+  //   if (
+  //     !event.target.matches('#TBWORKS') 
+  //     && !event.target.matches('#nextPage') 
+  //     && !event.target.matches('#nextPage2')
+  //     && !event.target.matches('.project-content-container')
+  //     && !event.target.matches('.social-logo')
+  //     && !event.target.matches('.image-section a')
+  //     && !event.target.matches('.card-title-anchor')
+  //   ) {
+  //     if (isCheckboxChecked) {
+  //       checkbox.checked = false;
+  //     } else {
+  //       this._closeDrawer(event, drawer);
+  //     }
+  //   }
+  // });
  
   document.addEventListener('DOMContentLoaded', () => {
     content.addEventListener('click', (event) => {
