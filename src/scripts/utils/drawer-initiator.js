@@ -54,10 +54,7 @@ const DrawerInitiator = {
 
   document.addEventListener('DOMContentLoaded', () => {
     // Function to handle click on specific elements
-    const handleClick = (event) => {
-      console.log('Clicked element:', event.target);
-      console.log('Drawer state before click:', drawer.classList.contains('open'));
-    
+    const handleClick = () => {    
       // Handle click event for each specific element
       if (!drawer.classList.contains('open')) {
         isCheckboxChecked = true;
