@@ -75,15 +75,17 @@
 
   #TBWORKS {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0);
-    transition: text-shadow 1s ease-in-out;
+    transition: text-shadow 0.5s ease-in-out;
+    color: #eaeaea;
   }
 
   #TBWORKS:hover {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
     
   }
 
-  .web-bar-menu {
+  .mobile-menu-container {
+    display: none;
   }
 
   #toggleNav {
@@ -135,19 +137,19 @@
 #hamburger-line1{
   height: 5px;
   width: 15px; 
-  background-color: #e9ecef; 
+  background-color: #eaeaea; 
 }
 
 #hamburger-line2{
   height: 5px;
   width: 35px;
-  background-color: #e9ecef; 
+  background-color: #eaeaea; 
 }
 
 #hamburger-line3{
   height: 5px;
   width: 25px; 
-  background-color: #e9ecef; 
+  background-color: #eaeaea; 
 }
 
   .web-bar-navigation {
@@ -189,7 +191,8 @@
   }
 
   .menu-list li.active a {
-    color: #f8f9fa;
+    color: #eaeaea;
+    font-weight: bolder;
   }
 
   .menu-list li:nth-child(1) {
@@ -259,7 +262,7 @@
   
   .menu-list a {
     text-decoration: none;
-    color: #e9ecef; 
+    color: #eaeaea; 
     padding: 5px 10px; /* Adjust padding as needed */
     display: inline-block
   }
@@ -345,11 +348,11 @@ display: flex;
 
 .intro-section h1 {
   font-size: 60px;
-  color: #a5a5a5;
+  color: #eaeaea;
 }
 
 .intro-section .page-num-color {
-  color: #a5a5a5;
+  color: #eaeaea;
 }
 
 .middle-section {
@@ -358,8 +361,9 @@ margin-left: 70px;
 }
 
 .middle-section h2{
-  color: #a5a5a5;
+  color: #eaeaea;
   font-size: 40px;
+  font-weight: 600;
 }
 
 .about-me-section {
@@ -369,24 +373,25 @@ margin-left: 70px;
 }
 
 .about-me-section p {
-font-size: 20px;
-color: #a5a5a5;
+font-size: 18px;
+color: #eaeaea;
+font-weight: 100;
 }
 
 .about-me-section p a {
   text-decoration: none;
   position: relative;
-  color: #a5a5a5;
+  color: #eaeaea;
 }
 
 .about-me-section p a::before{
   content: '';
-  background-color: #a5a5a560;
+  background-color: #a5a5a5d8;
   position: absolute;
   left: 0;
   bottom: 4px;
   width: 100%;
-  height: 6px;
+  height: 4px;
   z-index: -1;
   transition: all .3s ease-in-out;
 }
@@ -415,7 +420,7 @@ color: #a5a5a5;
     /* Style the anchor tags and images as needed */
     .social-icons a {
       text-decoration: none;
-      color: #a5a5a5;
+      color: #eaeaea;
     }
 
     .social-icons li a svg {
@@ -431,7 +436,7 @@ color: #a5a5a5;
       display: block;
       top: -8px;
       text-decoration: none;
-      color: #a5a5a5;
+      color: #eaeaea;
       position: relative;
       width: 8rem;
       height: 2rem;
@@ -443,15 +448,18 @@ color: #a5a5a5;
       background-color: transparent; /* Set initial background color to transparent */
       transition: all 0.5s ease-in-out; /* Transition for all properties */
     }
-    
+    .anchor-button-mobile {
+      display: none;
+    }
+
     .anchor-button:hover {
-      background-color: #e9ecef; /* Change background color when hovered */
+      background-color: #eaeaea; /* Change background color when hovered */
       color: black; /* Change text color when hovered */
       transition: all 0.5s ease-in-out; /* Transition for both background and text color */
     }
     
     .anchor-button:hover::before {
-      background-color: #e9ecef; /* Change background color when hovered */
+      background-color: #eaeaea; /* Change background color when hovered */
       transition: background-color 0.5s ease-in-out; /* Transition for background color */
     }
     
@@ -469,7 +477,7 @@ color: #a5a5a5;
     }
     
     .anchor-button:hover::before {
-      background-color: #e9ecef; /* Change background color when hovered */
+      background-color: #eaeaea; /* Change background color when hovered */
     }
     
     .anchor-button .arrow {
@@ -488,7 +496,7 @@ color: #a5a5a5;
     .anchor-project {
       position: relative;
       right: -600px;
-      top: 50px;
+      top: 35px;
     }
 
     /*about me*/
@@ -519,7 +527,7 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     }
 
     .image-section img {
-      margin-top: 60px;
+      margin-top: 50px;
       position: relative;
       right: -40px;
       height: 50vh;
@@ -529,26 +537,26 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     }
 
     .image-section p {
-      color: #e9ecef;
+      color: #eaeaea;
       position: relative;
       top: 35px;
       left: 600px;
     }
 
     .image-section p a {
-      color: #e9ecef;
+      color: #eaeaea;
       text-decoration: none;
       position: relative;
     }
 
     .image-section p a::before {
       content: '';
-  background-color: #a5a5a560;
+  background-color: #a5a5a5d8;
   position: absolute;
   left: 0;
   bottom: 4px;
   width: 100%;
-  height: 6px;
+  height: 4px;
   z-index: -1;
   transition: all .3s ease-in-out;
     }
@@ -564,12 +572,12 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     /* Style for the top-right grid item (details) */
     font-size: 40px;
     position: relative;
-    left: -50px;
-    top: 50px;
+    left: -60px;
+    top: 40px;
     }
 
     .about-me-title-section h1 {
-      color: #f8f9fa;
+      color: #eaeaea;
     }
 
     .about-me-description {
@@ -585,22 +593,23 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     top: -60px;
     align-items: top;
     font-size: 14px;
+    line-height: 140%;
     }
 
     .grid-item {
       margin-right: 50px;
   }
 
-  .grid-1 {
-    margin-top: -30px;
-  }
+  /* .grid-1 {
+  
+  } */
 
   .bold-name {
     font-size: 25px;
   }
 
     .about-me-description p {
-      color: #f8f9fa;
+      color: #eaeaea;
       letter-spacing: .5px;
     }
 
@@ -617,14 +626,14 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
       height: 600px; /* Adjust the height as needed, or remove this line to let content define the height */
       width: 150vh; /* Use 100% for the width to fit the container */
       left: 35vh; /* Adjust this as needed */
-      color: #f8f9fa;
+      color: #eaeaea;
       overflow: hidden;
       overflow-y: auto;
       transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base class */
     }
 
     .projects-container::-webkit-scrollbar {
-      width: 8px;
+      width: 4px;
     }
 
     .projects-container::-webkit-scrollbar-thumb {
@@ -669,13 +678,14 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     }
 
     .project-details.open {
-      max-height: 400px; /* Or set the desired max height */
+      max-height: 550px; /* Or set the desired max height */
       margin-bottom: 50px;
     }
 
     .project-details p{
       margin-bottom: 15px;
-      font-size: 13px;
+      font-size: 14px;
+      line-height: 140%;
     }
 
     .project-details-content {
@@ -683,7 +693,6 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
       flex: 2; /* Allow the content to take available space */
       display: flex;
       flex-direction: column;
-      
     }
   
     .text-container {
@@ -724,7 +733,7 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     }
 
     .image-scroll-container::-webkit-scrollbar-thumb {
-      background-color: rgba(255, 255, 255, 0.152);
+      background-color: rgba(255, 255, 255, 0.474);
       border-radius: 4px;
     }
 
@@ -758,6 +767,12 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
       margin-top: 20px;
     }
 
+    .hidden-gem-url {
+      color: #eaeaea;
+      font-weight: bolder;
+      
+    }
+
     /* skills */
 
     .skills-container {
@@ -776,7 +791,7 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base class */
-    color: #f8f9fa;
+    color: #eaeaea;
     }
 
     .card-container {
@@ -880,22 +895,22 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
       height: 600px;
       width: 150vh;
       left: 35vh; 
-      color: #f8f9fa;
+      color: #eaeaea;
       transition: opacity 0.5s ease-in-out; 
       overflow: hidden;
     } */
 
     .certificates-title-section {
       position: sticky;
-      top: 170px; /* Adjust as needed */
+      top: 160px; /* Adjust as needed */
       margin-left: 280px;
-      color: #e9ecef;
+      color: #eaeaea;
       z-index: 1;
       font-size: 40px;
     }
 
     .spacer {
-      height: 20vh;
+      height: 30vh;
       opacity: 0.2;
    }
    
@@ -943,6 +958,6 @@ transition: opacity 0.5s ease-in-out; /* Transition is now applied to the base c
 .card-title a {
   font-size: 14px;
   text-align: center;
-  color: #e9ecef;
+  color: #eaeaea;
   text-decoration: none;
 }

@@ -19,12 +19,12 @@ const Certificates = {
     document.body.classList.add('hide-scrollbar');
     const certificatesContainer = document.querySelector('#certificatesId');
     certificatesContainer.innerHTML += createCertificatesTemplate();
-    // const certContainer = document.querySelector('.certificates-container');
-    // certContainer.style.opacity = 0;
+    certificatesContainer.style.opacity = 0;
 
-    // setTimeout(() => {
-    //   certContainer.style.opacity = 1;
-    // }, 100); // Change 1000 to the desired duration in milliseconds
+    setTimeout(() => {
+      certificatesContainer.style.opacity = 1;
+    }, 100); // Change 1000 to the desired duration in milliseconds
+
     const certificateUrls = [
       'https://drive.google.com/file/d/1FuF3hiV5HfwJVZzMQVGdBPr0kOVAmIZS/view?usp=sharing',
       'https://drive.google.com/file/d/17--0mujMoz_339LFe8xi2E8_qV-QojGC/view?usp=sharing',
@@ -91,14 +91,14 @@ const Certificates = {
     generateCards(certificatesData);
     gsap.registerPlugin(ScrollTrigger);
 
-    const spacer = 75;
+    const spacer = window.innerWidth < 768 ? 0 : 75;
 
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '.certificate-items',
         scrub: true,
-        start: 'top 50%', // Adjust the start position to 40% from the top
-        end: '+=4000', // Adjust the end position to a larger value
+        start: 'top 48%', // Adjust the start position to 40% from the top
+        end: `${window.innerHeight * 5} bottom`,
         markers: false,
         pin: true,
       },
@@ -107,7 +107,7 @@ const Certificates = {
     tl.fromTo(
       '.certificate-card:not(:first-child)',
       {
-        x: (index) => window.innerWidth / 1 + spacer * index,
+        x: (index) => window.innerWidth / 2 + spacer * index,
         stagger: 0.5,
       },
       {
@@ -115,6 +115,7 @@ const Certificates = {
         stagger: 0.5,
       },
     );
+
     // tl.scrollTrigger.kill();
     const links = document.querySelectorAll('.menu-item:not(.certificate), #TBWORKS');
     links.forEach((link) => {

@@ -14,7 +14,7 @@ const createIntroTemplate = () => `
     <h2>Hello! I'm a Bachelor of Computer Science</h2>
 </section>
 <section class="about-me-section">
-    <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website is developed as a personal project to showcase my web development skills. <br>Get to know more about me by clicking on my <a class="a-hover" href="/cv">CV</a> or <a class="a-hover" id="nextPage2" href="#/aboutme">About Me</a> page.</p>
+    <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website is developed as a personal project to showcase my web development skills. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/10tFZCnXv5P4C6OWHJMOPgMn4SoF_d6k2/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page.</p>
 </section>
 <section class="socials">
 <ul class="social-icons">
@@ -40,9 +40,10 @@ const createIntroTemplate = () => `
     </a>
   </li>
   <li>
-  <a id="nextPage" href="#/aboutme" class="anchor-button">About Me  <span class="arrow">→</span></a>
+  <a id="nextPage" href="#/aboutme" class="anchor-button anchor-button-hide">About Me  <span class="arrow">→</span></a>
   </li>
 </ul>
+<a id="nextPage" href="#/aboutme" class="anchor-button anchor-button-mobile">About Me  <span class="arrow">→</span></a>
 </section>
 </div>
 `;
@@ -51,14 +52,14 @@ const createAboutMeTemplate = () => `
 <div class="about-me-container">
   <section class="image-section">
     <img class="my-image" src="${CONFIG.BASE_IMAGE_URL}TederickPicture.jpeg" alt="Picture of Tederick Budiono">
-    <p>Get to know more about me through my <a href="" class="a-hover">CV</a></p>
+    <p>Get to know more about me through my <a href="https://drive.google.com/file/d/10tFZCnXv5P4C6OWHJMOPgMn4SoF_d6k2/view?usp=sharing" class="a-hover" target="_blank">CV</a></p>
   </section>
   <section class="about-me-title-section">
   <h1 class="page-num-color">02&nbsp;- ABOUT ME</h1>
   </section>
   <section class="about-me-description">
             <div class="grid-item grid-1">
-              <p><b class="bold-name">Tederick Budiono</b> or Erick is a recent CS graduate from Bina Nusantara University in 2023.
+              <p><b class="bold-name">Tederick Budiono</b> or Erick is a Computer Science fresh graduate from <b>Bina Nusantara University</b> in 2023.
               Has experience from GIS research internship, and web development bootcamp.
               During studies, developed an interest and passion in web development and
               has worked on some small web projects including this web portfolio and for thesis.</p>
@@ -72,9 +73,9 @@ const createAboutMeTemplate = () => `
               </p>
             </div>
             <div class="grid-item">
-              <p>Currently looking to expand my tech stack by learning ui/ux and web layout design, frameworks and try to 
-              implement it and some API on small web projects. Also looking for an opportunity
-              to be able to work or intern as a frontend engineer!</p>      
+              <p>Currently looking to expand my tech stack by learning creative coding & web layout design in a course from Domestika, 
+              learning animations with GSAP and planning to create/recreate projects. 
+              Also looking for an opportunity to be able to work or intern as a frontend engineer!</p>      
             </div>
           
     <a id="nextPage2" href="#/projects" class="anchor-button anchor-project">Projects  <span class="arrow">→</span></a>
@@ -101,9 +102,9 @@ const createProjectsTemplate = () => `
               <p>HiddenGem is my final year thesis project. It was developed in a group consisting of 3 people including me. We wanted to make a platform where users can find hidden gem locations in Java Island, Indonesia because it was a trending topic throughout social media and has potential.</p>
               <p>The project mainly consists of frontend and API integration where we created our own static Hidden Gem API where it is curated through survey & user recommendations, and through scraping Instagram posts under several hidden gem hashtags where then these two results are displayed in the website alongside the static API or data’s we have created.</p>
               <p>Features of this website consists of hidden gem location recommendations based on users’ current location (GeoApify), details of the location where users can add it to their Wishlist, submit recommendation form where user can submit their recommendations to the database, search locations, filter by location type, and list of locations based on Instagram hashtag data.</p>
-              <p>As one of the developers, I was responsible for creating the API with firebase, connecting both the firebase API and scraped data from Apify to the website, creating user location-based recommendations, and some small frontend tweaks. </p>
-              <p>Check out HiddenGem<a class="hidden-gem-url" href="https://main--fancy-mousse-6f9e96.netlify.app/" target="_blank">Here</a></p>
-            </div>
+              <p>As one of the developers, I was responsible for creating the API with firebase, connecting both the firebase API and scraped data from Apify to the website, creating user location-based recommendations, and small frontend tweaks. </p>
+              <p>Check out HiddenGem<a class="hidden-gem-url" href="https://main--fancy-mousse-6f9e96.netlify.app/" target="_blank"> <b>Here</b></a></p>
+              </div>
         </div>
         <div class="image-scroll-container">
           <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}HiddenGem1.jpg" alt="Screenshot 1 of Hidden Gem Website">
@@ -155,7 +156,6 @@ const createCertificatesTemplate = () => `
 
 <section class="certificates-title-section">
 <h1 class="page-num-color">05&nbsp;- CERTIFICATES</h1>
-<p class="scroll-title">→</p>
 </section>
 <div class="spacer"></div>
   <div class="certificate-items" id="certificateItems">

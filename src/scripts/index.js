@@ -6,6 +6,7 @@
 import 'regenerator-runtime';
 import App from './app';
 import '../styles/style.css';
+import '../styles/responsive.css';
 
 const app = new App({
     checkbox: document.querySelector('#toggleNav'),

@@ -148,6 +148,16 @@ const DrawerInitiator = {
       } 
     }
   });
+
+  // mobile
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const mobileMenuContainer = document.querySelector('.mobile-menu-container');
+
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuContainer.classList.toggle('active');
+    });
+});
     },
   
     _toggleDrawer(event, drawer) {

@@ -4,6 +4,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable indent */
 /* eslint-disable eol-last */
+/* eslint-disable max-len */
 import DrawerInitiator from './utils/drawer-initiator';
 import UrlParser from './routes/url-parser';
 import routes from './routes/routes';
