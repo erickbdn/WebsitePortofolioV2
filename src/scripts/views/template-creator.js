@@ -136,6 +136,26 @@ const createProjectsTemplate = () => `
       </div>
     </div>
   </div>
+  <div class="project-content-container project-3">
+    <div class="project-title-container">
+    <p class="project-keywords">GSAP - Headless CMS - Sveltekit</p>
+      <h2 class="project-title">Christopher Ariel Web Gallery / Portfolio </h2>
+    </div>
+    <div class="project-details">
+      <div class="details-container">
+        <div class="project-details-content">       
+            <div class="text-container">
+              <p>This website is created using Sveltekit that started with 0 knowledge of Svelte or Sveltekit at the start. Throughout developing this website i've gained knowledge by hands on project and through the Sveltekit documentation and interactive tutorial and various online resources. This website is created with a new approach in mind where i develop it more efficiently from learning to optimize my flow from my previous portfolio website. This website also includes GSAP or GreenSock animations as it is shown in several sections of the website. For the content i used Sanity Content Management Systems which is a headless CMS that i connect directly in my Frontend where i can access the studio. This website is still on progress and is being optimized at the moment to improve experience, smoothness, and to adhere with best practices. Check it out in this url <a href="https://christopherariel.netlify.app/">Gallery Website</a></p>
+            </div>
+        </div>
+        <div class="image-scroll-container">
+        <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}Gallery(1).png" alt="Screenshot 1 of Gallery Website">
+        <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}Gallery(2).png" alt="Screenshot 2 of Gallery Website">
+        <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}Gallery(3).png" alt="Screenshot 3 of Gallery Website">
+        </div>
+      </div>
+    </div>
+  </div>
   <a id="nextPage3" href="#/skills" class="anchor-button anchor-skills">Skills  <span class="arrow">→</span></a>
 </div>
 `;
