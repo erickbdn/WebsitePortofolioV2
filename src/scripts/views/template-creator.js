@@ -14,7 +14,7 @@ const createIntroTemplate = () => `
     <h2>Hello! I'm a Bachelor of Computer Science</h2>
 </section>
 <section class="about-me-section">
-    <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website is developed as a personal project to showcase my web development skills. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/10tFZCnXv5P4C6OWHJMOPgMn4SoF_d6k2/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page.</p>
+    <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website is developed as a personal project to showcase my web development skills. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/1Gy6FnKE-DCmpcW1gcKBFX7_mhIaUJW7c/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page.</p>
 </section>
 <section class="socials">
 <ul class="social-icons">
@@ -52,7 +52,7 @@ const createAboutMeTemplate = () => `
 <div class="about-me-container">
   <section class="image-section">
     <img class="my-image" src="${CONFIG.BASE_IMAGE_URL}TederickPicture.jpeg" alt="Picture of Tederick Budiono">
-    <p>Get to know more about me through my <a href="https://drive.google.com/file/d/10tFZCnXv5P4C6OWHJMOPgMn4SoF_d6k2/view?usp=sharing" class="a-hover" target="_blank">CV</a></p>
+    <p>Get to know more about me through my <a href="https://drive.google.com/file/d/1Gy6FnKE-DCmpcW1gcKBFX7_mhIaUJW7c/view?usp=sharing" class="a-hover" target="_blank">CV</a></p>
   </section>
   <section class="about-me-title-section">
   <h1 class="page-num-color">02&nbsp;- ABOUT ME</h1>
@@ -73,7 +73,7 @@ const createAboutMeTemplate = () => `
               </p>
             </div>
             <div class="grid-item">
-              <p>Currently looking to expand my tech stack by learning creative coding & web layout design in a course from Domestika, 
+              <p>Currently looking to expand my tech stack by learning creative coding & web layout design in a course from Domestika, learning React the complete Guide on Udemy,
               learning animations with GSAP and planning to create/recreate projects. 
               Also looking for an opportunity to be able to work or intern as a frontend engineer!</p>      
             </div>
