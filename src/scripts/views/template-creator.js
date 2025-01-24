@@ -156,6 +156,26 @@ const createProjectsTemplate = () => `
       </div>
     </div>
   </div>
+  <div class="project-content-container project-4">
+    <div class="project-title-container">
+    <p class="project-keywords">Figma - React - Next.js - Redux</p>
+      <h2 class="project-title">Entitas - A Simple ERP Dummy Project</h2>
+    </div>
+    <div class="project-details">
+      <div class="details-container">
+        <div class="project-details-content">       
+            <div class="text-container">
+              <p>This project is to help sharpen my skills specifically in React, Next.js, and Redux. Currently I am on the designing phase of the project. Entitas design direction isn't the typical corporate style ERP website, i chose this design style as an experiment and to see whether or not design trends could fit in this or not. It is heavily inspired by progressive blur and bento grid layout. Technical features will include account systems (admin roles), CRUD for inventory management and sales management, and graphs for reports.</p>
+            </div>
+        </div>
+        <div class="image-scroll-container">
+        <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}Entitas_1.jpg" alt="Screenshot 1 of Entitas Website">
+        <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}Entitas_2.jpg" alt="Screenshot 2 of Entitas Website">
+        <img class="project-image" src="${CONFIG.BASE_IMAGE_URL}Entitas_3.jpg" alt="Screenshot 3 of Entitas Website">
+        </div>
+      </div>
+    </div>
+  </div>
   <a id="nextPage3" href="#/skills" class="anchor-button anchor-skills">Skills  <span class="arrow">→</span></a>
 </div>
 `;
