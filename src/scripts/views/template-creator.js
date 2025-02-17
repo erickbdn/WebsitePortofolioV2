@@ -14,7 +14,7 @@ const createIntroTemplate = () => `
     <h2>Hello! I'm a Bachelor of Computer Science</h2>
 </section>
 <section class="about-me-section">
-        <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website was originally developed as a personal project to showcase my web development skills. While I haven't updated the overall site in a while my <a class="a-hover" href="#/projects">Projects</a> Section includes my latest work. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/1Gy6FnKE-DCmpcW1gcKBFX7_mhIaUJW7c/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page. or kindly visit <a class="a-hover" href="https://www.instagram.com/kire.dev/">my blog instagram for latest updates.</a></p>
+        <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website was originally developed as a personal project to showcase my web development skills. While I haven't updated the overall site in a while my <a class="a-hover" href="#/projects">Projects</a> Section includes my latest work. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/1Gy6FnKE-DCmpcW1gcKBFX7_mhIaUJW7c/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page. or kindly visit my blog <a class="a-hover" href="https://www.instagram.com/kire.dev/">Instagram</a> for latest updates.</p>
 </section>
 <section class="socials">
 <ul class="social-icons">
@@ -165,7 +165,7 @@ const createProjectsTemplate = () => `
       <div class="details-container">
         <div class="project-details-content">       
             <div class="text-container">
-              <p>This project is to help sharpen my skills specifically in React, Next.js, and Redux. Currently I am on the designing phase of the project. Entitas design direction isn't the typical corporate style ERP website, i chose this design style as an experiment and to see whether or not design trends could fit in this or not. It is heavily inspired by progressive blur and bento grid layout. Technical features will include account systems (admin roles), CRUD for inventory management and sales management, and graphs for reports.</p>
+              <p>This project is to help sharpen my skills specifically in React, Next.js, and Redux. Currently I am on the developing phase of the project. Entitas design direction isn't the typical corporate style ERP website, i chose this design style as an experiment and to see whether or not design trends could fit in this or not. It is heavily inspired by progressive blur and bento grid layout. Technical features will include account systems (admin roles), CRUD for inventory management and sales management, and graphs for reports. Utilizing Redux, Firebase Auth, and ShadCN.</p>
             </div>
         </div>
         <div class="image-scroll-container">
