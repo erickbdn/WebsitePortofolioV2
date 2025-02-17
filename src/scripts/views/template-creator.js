@@ -14,7 +14,7 @@ const createIntroTemplate = () => `
     <h2>Hello! I'm a Bachelor of Computer Science</h2>
 </section>
 <section class="about-me-section">
-    <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website is developed as a personal project to showcase my web development skills. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/1Gy6FnKE-DCmpcW1gcKBFX7_mhIaUJW7c/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page.</p>
+        <p>My name is Tederick Budiono. Welcome to my web portfolio. <br>This website was originally developed as a personal project to showcase my web development skills. While I haven't updated the overall site in a while my <a class="a-hover" href="#/projects">Projects</a> Section includes my latest work. <br>Get to know more about me by clicking on my <a class="a-hover" href="https://drive.google.com/file/d/1Gy6FnKE-DCmpcW1gcKBFX7_mhIaUJW7c/view?usp=sharing" target="_blank">CV</a> or <a class="a-hover" id="nextPage" href="#/aboutme">About Me</a> page. or kindly visit <a class="a-hover" href="https://www.instagram.com/kire.dev/">my blog instagram for latest updates.</a></p>
 </section>
 <section class="socials">
 <ul class="social-icons">
